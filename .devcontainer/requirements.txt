@@ -1,0 +1,10 @@
+otter-grader
+datascience
+numpy
+matplotlib
+pandas
+scipy
+jinja2
+hvplot
+notion_client
+python-dotenv

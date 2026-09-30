@@ -1,0 +1,22 @@
+{
+  "name": "statistics course",
+  // Офіційний образ Microsoft з Python
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookEditor.defaultCellMarker": "# %%"
+      }
+    }
+  },
+
+  // Встановлюємо залежності після створення контейнера
+  "postCreateCommand": "pip install --no-cache-dir -r .devcontainer/requirements.txt"
+}
